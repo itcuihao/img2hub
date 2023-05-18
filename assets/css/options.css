@@ -1,0 +1,36 @@
+#gh-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 8px;
+  font-size: 16px;
+}
+.form-input {
+  padding: 4px;
+  margin: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-button {
+  font-size: 18px;
+  padding: 8px 16px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#gh-status {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #888;
+}

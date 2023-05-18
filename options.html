@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+    <link rel="stylesheet" href="assets/css/options.css">
+  </head>
+  <body>
+    <form id="gh-form">
+        <label class="form-label" for="gh-username">
+          Username:
+          <input type="text" id="gh-username" name="username" class="form-input">
+        </label>
+        <label class="form-label" for="gh-reponame">
+          Repository Name:
+          <input type="text" id="gh-reponame" name="reponame" class="form-input">
+        </label>
+        <label class="form-label" for="gh-folder">
+          Folder:
+          <input type="text" id="gh-folder" name="folder" class="form-input">
+        </label>
+        <label class="form-label" for="gh-email">
+          Email:
+          <input type="text" id="gh-email" name="email" class="form-input">
+        </label>
+        <label class="form-label" for="gh-token">
+          Token:
+          <input type="text" id="gh-token" name="token" class="form-input">
+        </label>
+        <button type="submit" id="gh-save" class="form-button">Save</button>
+    </form>
+    <div id="gh-status"></div>
+    <script src="assets/js/options.js"></script>
+  </body>
+</html>
