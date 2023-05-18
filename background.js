@@ -71,7 +71,7 @@ function execGithubGet(imgName,reqObj){
     
     console.log("file upload success", );
     chrome.storage.sync.set(
-        { imgName: true },
+        { 'imgName': imgName, 'exist': true },
         () => {
           console.log("img storage set name: ", imgName);
         }
@@ -89,10 +89,10 @@ chrome.runtime.onMessage.addListener((req, sender, sendResponse) => {
     var imgName = urlHash.toString(CryptoJS.enc.Base64)+"."+reqObj.imgExt
     console.log('url name: ',imgName);
     chrome.storage.sync.get(
-        { imgName: false },
+        { 'imgName': imgName, 'exist': false },
         (item) => {
             console.log("img storage get exist: ", item.imgName);
-            if (item.imgName === true) {
+            if (item.exist === true) {
                 console.log("quit");
                 return; // 退出
             }
