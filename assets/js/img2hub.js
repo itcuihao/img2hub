@@ -114,16 +114,15 @@ chrome.storage.sync.get(
       if (item.img2hubExec === false) {
           return;
       }
-      execImg2HubJob();
       chrome.storage.sync.set(
         { img2hubExec: false },
         () => {
           console.log("img2hub storage set exec: false");
         }
-      );
+        );
       // 上传
+      execImg2HubJob();
       return; // 退出
-
   }
 );
 
